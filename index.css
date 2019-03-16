@@ -1,0 +1,140 @@
+
+body {
+  font-family: 'Univers LT Std 47 Light Condensed', 'Helvetica', sans-serif;
+
+  color: #222;
+
+  font-size: 16px;
+  line-height: 22px;
+  margin: 0;
+}
+
+body i {
+  font-family: 'Univers LT Std 47 Light Condensed Oblique', 'Helvetica', sans-serif;
+}
+
+h1 {
+  font-family: 'Univers LT Std 67 Bold Condensed', 'Helvetica', sans-serif;
+  font-weight: 100;
+  margin-left: -0.1em;
+  font-size: 32px;
+}
+
+h2 {
+  /* font-family: 'Univers LT Std 57 Condensed', 'Helvetica', sans-serif; */
+  font-size: 20px;
+  margin: 11px 0;
+}
+
+h3 {
+  /* font-family: 'Univers LT Std 57 Condensed', 'Helvetica', sans-serif; */
+  font-size: 16px;
+  margin: 11px 0;
+}
+
+p {
+  margin: 11px 0 ;
+}
+
+body {
+  scroll-snap-type: y mandatory;
+}
+
+section {
+  scroll-snap-align: start;
+
+  margin: 50px;
+}
+
+.intro {
+  min-height: calc(100vh - 94px - 50px);
+  max-width: 390px;
+}
+
+a {
+  color: #222;
+  text-decoration: none;
+  border-bottom: 1px solid #777;
+}
+
+a:hover {
+  color: #CF0000;
+  border-bottom-color: #CF0000;
+}
+
+.links li {
+  display: inline-block;
+  margin-right: 1em;
+}
+
+.links {
+  list-style: none;
+  padding: 0;
+}
+
+.preview {
+  position: relative;
+  margin-left: -50px;
+  width: 100%;
+  padding: 11px 50px;
+  min-height: 200px;
+  background-color: black;
+  background-size: cover;
+  background-position: 50% 50%;
+  transition: filter 200ms ease;
+  margin-bottom: 88px;
+}
+
+.preview h2 {
+  margin-top: 0;
+  margin-bottom: 11px;
+}
+
+.preview::before {
+  display: block;
+  position: absolute;
+  content: "";
+  z-index: 1;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  opacity: 0;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-image: url('assets/previews/overlay.jpg') !important;
+  text-indent: initial;
+  transition: opacity 200ms ease;
+}
+
+.preview > * {
+  transition: opacity 200ms ease;
+  opacity: 0;
+  position: relative;
+  z-index: 2;
+}
+
+.preview:hover > * {
+  opacity: 1;
+}
+
+.preview:hover::before {
+  opacity: 0.96;
+}
+
+#billing.preview {
+  background-image: url('assets/previews/billing.jpg');
+}
+
+#wowd.preview {
+  background-image: url('assets/previews/wowd.jpg');
+  background-position: 0% 2%;
+}
+
+#bfamfaphd.preview {
+  background-image: url('assets/previews/bfamfaphd.jpg');
+  background-position-y: 45%;
+}
+
+#bus.preview {
+  background-image: url('assets/previews/bus.jpg');
+  background-position-y: 61%;
+}
