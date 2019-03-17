@@ -1,6 +1,6 @@
 
 body {
-  font-family: 'Univers LT Std 47 Light Condensed', 'Helvetica', sans-serif;
+  font-family: 'Univers LT Std 47 Light Condensed', Arial Narrow,Arial,sans-serif;
 
   color: #222;
 
@@ -10,24 +10,21 @@ body {
 }
 
 body i {
-  font-family: 'Univers LT Std 47 Light Condensed Oblique', 'Helvetica', sans-serif;
+  font-family: 'Univers LT Std 47 Light Condensed Oblique', Arial Narrow,Arial,sans-serif;
 }
 
 h1 {
-  font-family: 'Univers LT Std 67 Bold Condensed', 'Helvetica', sans-serif;
-  font-weight: 100;
+  font-family: 'Univers LT Std 67 Bold Condensed', Arial Narrow Bold, Arial Narrow, Arial, sans-serif;
   margin-left: -0.1em;
   font-size: 32px;
 }
 
 h2 {
-  /* font-family: 'Univers LT Std 57 Condensed', 'Helvetica', sans-serif; */
   font-size: 20px;
   margin: 11px 0;
 }
 
 h3 {
-  /* font-family: 'Univers LT Std 57 Condensed', 'Helvetica', sans-serif; */
   font-size: 16px;
   margin: 11px 0;
 }
@@ -122,6 +119,7 @@ a:hover {
 
 #billing.preview {
   background-image: url('assets/previews/billing.jpg');
+  background-position-x: 0%;
 }
 
 #wowd.preview {
