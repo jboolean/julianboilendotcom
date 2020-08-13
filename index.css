@@ -11,6 +11,7 @@ body {
 
 body i {
   font-family: 'Univers LT Std 47 Light Condensed Oblique', Arial Narrow,Arial,sans-serif;
+  font-style: normal;
 }
 
 h1 {
@@ -133,4 +134,9 @@ a:hover {
 #bus.preview {
   background-image: url('assets/previews/bus.jpg');
   background-position-y: 61%;
+}
+
+#fourties.preview {
+  background-image: url('assets/previews/fourties.jpg');
+  background-position-y: 55%;
 }
