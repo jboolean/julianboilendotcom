@@ -155,6 +155,11 @@ a:hover {
   background-position-y: 55%;
 }
 
-#wtc .preview-video {
+#wtc.preview .preview-video {
   object-position: 60% 65%;
+}
+
+#posthumans.preview {
+  background-image: url("assets/previews/posthumans.jpg");
+  background-position: 50% 65%;
 }
