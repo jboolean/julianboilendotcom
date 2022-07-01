@@ -41,7 +41,7 @@ section {
 }
 
 .intro {
-  min-height: calc(100vh - 94px - 50px);
+  min-height: calc(100vh - 94px - 70px);
 }
 
 a {
