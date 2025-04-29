@@ -41,7 +41,11 @@ section {
 }
 
 .intro {
-  min-height: calc(100vh - 94px - 90px);
+  min-height: calc(100vh - 100px - 90px);
+
+  @supports(min-height: 100svh) {
+    min-height: calc(100svh - 100px - 80px);
+  }
 }
 
 a {
